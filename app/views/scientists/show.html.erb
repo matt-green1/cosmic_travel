@@ -1,0 +1,9 @@
+<%= @scientist.name %>
+<p><% @my_planets.each do |planet| %></p>
+Name: <%= planet.name %>
+
+<% end %><br>
+
+<%= button_to "DELETE", scientist_path(@scientist), method: :delete %>
+
+
